@@ -18,3 +18,6 @@ gem 'highscore'
 
 gem 'text'
 
+# for ez regexp generations
+gem 'verbal_expressions'
+
