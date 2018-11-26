@@ -3,10 +3,20 @@
 	<p><%= comparison %></p>
 	<hr>
 	<ul class="list-group">
+		<strong>Word Occurance, without exclusions yields: <%= occurances.count %> words</strong>
 		<% occurances.each do |occurance| %>
 			<li class="list-group-item d-flex justify-content-between align-items-center">
 				<%= "'#{occurance[:word]}'" %>
 				<span class="badge badge-primary badge-pill"><%= "#{occurance[:frequency]}" %></span>
+			</li>
+		<% end %> 
+	</ul>
+	<br>
+	<ul class="list-group">
+		<strong>Word Occurance, with exclusions yields: <%= occurances_with_exceptions.count %> words </strong>
+		<% occurances_with_exceptions.each do |occurance| %>
+			<li class="list-group-item d-flex justify-content-between align-items-center">
+				<%= "'#{occurance}'" %>
 			</li>
 		<% end %> 
 	</ul>
