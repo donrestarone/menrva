@@ -1,0 +1,22 @@
+<h1>Home#index</h1>
+
+
+
+<p>comparison</p>
+<%= form_for :comparison, url: create_comparison_path, remote: true, id: 'newComparisonForm' do |f| %>
+	<%= f.text_field :body %>
+	<%= f.submit "Save", id: 'createNewComparison'  %>
+<% end %>
+
+<div id="comparison">
+</div>
+
+
+<p>paragraph</p>
+<%= form_for :paragraph, url: create_paragraph_path, remote: true do |f| %>
+	<%= f.text_field :body %>
+	<%= f.submit "Save" %>
+<% end %>
+
+<div id="paragraph">
+</div>
