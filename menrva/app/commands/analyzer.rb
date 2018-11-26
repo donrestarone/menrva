@@ -25,7 +25,7 @@ class Analyzer
   def self.exclusions
     # return Generator.get_regexp_exclusion('and')
     # returns array of excluded words, eventually implement custom regexp
-    return %w(and the a or of from on as we you to is it in at by)
+    return %w(and the a or of from on as we you to is it in at by for his hers has an he)
   end
 
 
