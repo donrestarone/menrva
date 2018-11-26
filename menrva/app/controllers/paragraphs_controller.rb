@@ -6,6 +6,7 @@ class ParagraphsController < ApplicationController
   end
 
   def create
+    @paragraph = params["paragraph"]["body"]
     respond_to do |format|
       format.js {}
     end

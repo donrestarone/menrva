@@ -1,1 +1,1 @@
-$('#paragraph').append("<%= j render partial: 'home/paragraph_analysis' %>");
+$('#paragraph').append("<%= j render partial: 'home/paragraph_analysis', :locals => {:paragraph => @paragraph} %>");
