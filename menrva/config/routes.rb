@@ -1,8 +1,5 @@
 Rails.application.routes.draw do
-  get 'paragraphs/new'
-  get 'paragraphs/show'
-  get 'paragraphs/create'
-root :to => "home#index"
+  get '/', :to => "home#index"
 
   get 'comparisons/new', to: 'comparisons#new', as: 'new_comparison'
   post 'comparisons/create', to: 'comparisons#create', as: 'create_comparison'
